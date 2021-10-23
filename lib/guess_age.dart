@@ -72,7 +72,7 @@ class _GuessAgeState extends State<GuessAge> {
                     },
                   ),
                   const SizedBox(height: 20,),
-                  _submitButton(),
+                  _buildSubmitButton(),
                 ],
               ),
             ),
@@ -97,7 +97,7 @@ class _GuessAgeState extends State<GuessAge> {
     );
   }
 
-  _submitButton(){
+  _buildSubmitButton(){
     return ElevatedButton(
         onPressed: _callApi,
         child: const Padding(
